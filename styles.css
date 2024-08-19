@@ -1,0 +1,93 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(13, 13, 13);
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(13, 13, 13);
+}
+
+#display {
+  font-size: 5rem;
+  font-family: "Lato", sans-serif, helvetica;
+  font-weight: 100;
+  color: #fff;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+@media screen and (max-width: 600px) {
+  #display {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #controls {
+    font-size: 3rem;
+  }
+}
+
+#controls {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+  #controls {
+    flex-direction: column;
+  }
+}
+
+#controls button {
+  font-size: 2rem;
+  padding: 10px 20px;
+  margin: 5px;
+  width: 10rem;
+  height: 10rem;
+  border: none;
+  border-radius: 500px;
+  cursor: pointer;
+  color: #fff;
+  transition: background-color 0.5s ease;
+}
+
+@media screen and (max-width: 600px) {
+  #controls button {
+    font-size: 1.25rem;
+    width: 7rem;
+    height: 7rem;
+  }
+}
+
+#startBtn {
+  background-color: rgb(32, 53, 33);
+  color: green;
+}
+
+#startBtn:hover {
+  background-color: rgba(32, 53, 33, 0.75);
+}
+
+#stopBtn {
+  background-color: rgb(53, 32, 32);
+  color: red;
+}
+
+#stopBtn:hover {
+  background-color: rgba(53, 32, 32, 0.75);
+}
+
+#resetBtn {
+  background-color: rgb(32, 46, 53);
+  color: blue;
+}
+
+#resetBtn:hover {
+  background-color: rgba(32, 46, 53, 0.75);
+}
